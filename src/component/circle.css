@@ -1,0 +1,170 @@
+.container1{
+  position: absolute;
+  top: 150px;
+  right: 40vw;
+
+}
+.container1 p{
+  position: relative;
+  top: 40px;
+  left: 30px;
+  /* color: var(--glow-color); */
+  color: white;
+}
+@media (max-width: 768px) {
+  .container1 {
+    top: 100px; /* Adjust the top position for mobile */
+    right: 10vw; /* Adjust the right position for mobile */
+    left: auto;  /* Add left positioning for centering */
+  }
+
+  .container1 p {
+    top: 40px; /* Adjust the top position for mobile */
+    left: 10vw; /* Adjust the left position for mobile */
+    font-size: 1em; /* Adjust font size for better readability on mobile */
+  }
+}
+
+.circle-container {
+    top: 40px;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 50%;
+    background-color:none;
+    font-size: 4em;
+    font-weight: 900;
+
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  animation: border-flicker 2s linear infinite;
+  }
+  .circle-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 3);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  .circle-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    border: 1px solid var(--glow-color);
+    border-radius: 50%;
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  .circle-container:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .circle-container:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .circle-container:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .circle-container:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .circle-container:hover:after {
+    opacity: 1;
+  }
+
+
+
+  /* Styles for the hour marks */
+  .hour-mark {
+    position: absolute;
+    width: 60%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    color: var(--glow-color);
+  }
+  
+  .hour-mark span {
+    position: absolute;
+    top: -90px; /* Adjust this value to place the numbers correctly */
+  }
+
+  /* Styles for the minute marks */
+.minute-mark {
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    color: var(--glow-color);
+  }
+  
+  .minute-mark span {
+    position: absolute;
+    top: -95px; /* Adjust this value to place the dots correctly */
+  }
+  
+  /* Styles for the circles */
+  .circle {
+    position: absolute;
+    width: 4px;
+    background-color: #333;
+    border-radius: 10px;
+    left: 50%;
+    transform-origin: 50% 100%;
+  }
+  
+  /* Styles for the seconds circle */
+  .seconds {
+    height: 70px;
+    width: 2px;
+    background-color: #ff0000;
+    top: 30px;
+  }
+  
+  /* Styles for the minutes circle */
+  .minutes {
+    height: 60px;
+    background-color: #00ff00;
+    top: 40px;
+  }
+  
+  /* Styles for the hours circle */
+  .hours {
+    height: 50px;
+    background-color: #0000ff;
+    top: 50px;
+  }
+  
