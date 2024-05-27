@@ -1,24 +1,17 @@
 // Navbar.js
-import React, { useState } from 'react';
-import './Navbar.css';
-import HomeIcon from '@mui/icons-material/Home';
-import ImageIcon from '@mui/icons-material/Image';
-import FileIcon from '@mui/icons-material/Description';
-import GameIcon from '@mui/icons-material/SportsEsports';
-import BookIcon from '@mui/icons-material/MenuBook';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import SettingsIcon from '@mui/icons-material/Settings';
-import PersonIcon from '@mui/icons-material/Person';
-
+import "./Navbar.css";
+import HomeIcon from "@mui/icons-material/Home";
+import ImageIcon from "@mui/icons-material/Image";
+import FileIcon from "@mui/icons-material/Description";
+import GameIcon from "@mui/icons-material/SportsEsports";
+import BookIcon from "@mui/icons-material/MenuBook";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import SettingsIcon from "@mui/icons-material/Settings";
+import PersonIcon from "@mui/icons-material/Person";
 
 const Navbar = () => {
- 
-
-  
-
   return (
     <div className="nav">
-      
       <ul>
         <li>
           <a href="#">
@@ -69,7 +62,6 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-
     </div>
   );
 };
