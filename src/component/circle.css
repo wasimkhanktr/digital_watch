@@ -13,8 +13,8 @@
 @media (max-width: 768px) {
   .container1 {
     top: 100px; /* Adjust the top position for mobile */
-    right: 20vw; /* Adjust the right position for mobile */
-    left: auto; /* Add left positioning for centering */
+    right: 10vw; /* Adjust the right position for mobile */
+    left: auto;  /* Add left positioning for centering */
   }
 
   .container1 p {
@@ -116,51 +116,52 @@
 
 /* Styles for the minute marks */
 .minute-mark {
-  position: absolute;
-  width: 100%;
-  height: 8%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  font-size: 10px;
-  color: var(--glow-color);
-}
-
-.minute-mark span {
-  position: absolute;
-  top: -95px; /* Adjust this value to place the dots correctly */
-}
-
-/* Styles for the circles */
-.circle {
-  position: absolute;
-  width: 4px;
-  background-color: #333;
-  border-radius: 10px;
-  left: 50%;
-  transform-origin: 50% 100%;
-}
-
-/* Styles for the seconds circle */
-.seconds {
-  height: 70px;
-  width: 2px;
-  background-color: #ff0000;
-  top: 30px;
-}
-
-/* Styles for the minutes circle */
-.minutes {
-  height: 60px;
-  background-color: #00ff00;
-  top: 40px;
-}
-
-/* Styles for the hours circle */
-.hours {
-  height: 50px;
-  background-color: #0000ff;
-  top: 50px;
-}
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    color: var(--glow-color);
+  }
+  
+  .minute-mark span {
+    position: absolute;
+    top: -95px; /* Adjust this value to place the dots correctly */
+  }
+  
+  /* Styles for the circles */
+  .circle {
+    position: absolute;
+    width: 4px;
+    background-color: #333;
+    border-radius: 10px;
+    left: 50%;
+    transform-origin: 50% 100%;
+  }
+  
+  /* Styles for the seconds circle */
+  .seconds {
+    height: 70px;
+    width: 2px;
+    background-color: #ff0000;
+    top: 30px;
+  }
+  
+  /* Styles for the minutes circle */
+  .minutes {
+    height: 60px;
+    background-color: #00ff00;
+    top: 40px;
+  }
+  
+  /* Styles for the hours circle */
+  .hours {
+    height: 50px;
+    background-color: #0000ff;
+    top: 50px;
+  }
+  
