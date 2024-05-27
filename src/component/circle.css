@@ -14,7 +14,7 @@
 @media (max-width: 768px) {
   .container1 {
     top: 100px; /* Adjust the top position for mobile */
-    right: 10vw; /* Adjust the right position for mobile */
+    right: 15vw; /* Adjust the right position for mobile */
     left: auto;  /* Add left positioning for centering */
   }
 
