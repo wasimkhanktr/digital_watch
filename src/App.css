@@ -18,4 +18,5 @@
 
 .nav-menu.open {
   display: flex;
+  font-weight: 600;
 }
