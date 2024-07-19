@@ -28,7 +28,7 @@ function App() {
       {True ? <CircleWatch /> : <Watch />}
       <div className="chenge">
         <button class="btn btn-custom mt-3" onClick={handleClick}>
-          chenge clock Design
+          change clock Design 
         </button>
       </div>
     </div>
